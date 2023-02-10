@@ -5,14 +5,13 @@ gives="${pkgname}"
 breaks="${pkgname}"
 #repology=("project: font-fira")
 replace="${gives}"
-url="https://github.com/google/material-design-icons/archive/${version}.tar.gz"
+url="https://github.com/ICE-GB/pacstall-programs/raw/650260359869ca5b6407ab29703fb04bcc42694a/packages/ttf-material-design-icons/MaterialIcons-Regular.ttf"
 description="Material Design icons by Google"
-hash="b1b068d625d5e15d6ec0059209cec67bc4c46e39c4611b859d6f6680dbf23934"
+# hash="b1b068d625d5e15d6ec0059209cec67bc4c46e39c4611b859d6f6680dbf23934"
 maintainer="awnlzw <awnlzw@126.com>"
 
 
 install() {
     sudo install -d "${pkgdir}"/usr/share/fonts/TTF
-    sudo install -Dm644 "${SRCDIR}"/font/MaterialIcons-Regular.ttf "${pkgdir}"/usr/share/fonts/TTF/MaterialIcons-Regular.ttf
-    sudo install -Dm655 "${SRCDIR}"/LICENSE "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE
+    sudo install -Dm644 "${SRCDIR}"/MaterialIcons-Regular.ttf "${pkgdir}"/usr/share/fonts/TTF/MaterialIcons-Regular.ttf
 }
